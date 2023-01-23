@@ -1,6 +1,8 @@
 ## Overview
 This sample shows how to run a Nodejs and mongodb app on Azure Kubernetes Services and create a Jenkins Server using Windows PowerShell.
 
+![app](https://user-images.githubusercontent.com/45655351/213992341-bfc0f153-950b-4e85-8459-18cf693a83e2.png)
+
 ## Please follow below steps to deploy the code into aks
 
 Step 1 : To up the Jenkins Server and install the docker  in Azure linux machine run the script vmcreation.ps1 
