@@ -42,3 +42,27 @@ echo "<com.cloudbees.plugins.credentials.impl.UsernamePasswordCredentialsImpl pl
 -s http://localhost:8080  \
 -webSocket create-credentials-by-xml system::system::jenkins _
 
+cd /home/vname
+echo "<org.jenkinsci.plugins.plaincredentials.impl.StringCredentialsImpl plugin='plain-credentials@1.7'>
+<scope>GLOBAL</scope>
+<id>resourcegroup</id>
+<description>Azure Resource Group </description>
+<secret>testresourcegroup</secret>
+</org.jenkinsci.plugins.plaincredentials.impl.StringCredentialsImpl>" \
+| java -jar jenkins-cli.jar \
+-auth admin:passwordjenkins \
+-s http://localhost:8080 \
+-webSocket create-credentials-by-xml system::system::jenkins _
+
+
+cd /home/vname
+echo "<org.jenkinsci.plugins.plaincredentials.impl.StringCredentialsImpl plugin='plain-credentials@1.7'>
+<scope>GLOBAL</scope>
+<id>cluster</id>
+<description>Azure AKS name </description>
+<secret>testcluster</secret>
+</org.jenkinsci.plugins.plaincredentials.impl.StringCredentialsImpl>" \
+| java -jar jenkins-cli.jar \
+-auth admin:passwordjenkins \
+-s http://localhost:8080 \
+-webSocket create-credentials-by-xml system::system::jenkins _
