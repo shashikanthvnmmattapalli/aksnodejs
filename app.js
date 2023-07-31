@@ -20,7 +20,7 @@ function createHomePage(req,res){
         res.write("<body style='background-color:lightyellow;'> ");
         res.write("<center>");
         res.write("<form name='DisplayForm' method='POST' >");
-        res.write("<legend><center><h1> Demo Microservices application with MONGO/AKS Kubernetes</h1></center></legend>");
+        res.write("<legend><center><h1> Demo Microservices application with MONGO/</h1></center></legend>");
     res.write("<input type='button' onclick=\"location.href='/AddEmployee'\" value='AddEmployee' />");
         res.write("<input type='button' onclick=\"location.href='/UpdateEmployee'\" value='UpdateEmployee' />");
         res.write("<input type='button' onclick=\"location.href='/GetEmployee'\" value='GetEmployee' />");
