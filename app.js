@@ -9,7 +9,8 @@ var mongo_host =  'localhost' ;
 var mongo_port =  27017 ;
 // var url = 'mongodb://'+mongo_host+':'+mongo_port+'/employee';
 // var url = 'mongodb://'+mongo_host+':'+mongo_port+'/mymondb';
-var url = 'mongodb://mongo-0.mongo:27017/mymondb';
+//var url = 'mongodb://mongo-0.mongo:27017/mymondb';
+var url= 'mongodb://127.0.0.1:27017/mymondb';
 var dbName = "mymondb";
 
 var  MongoClient = require('mongodb').MongoClient;
